@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: url(./image-folder/159Z_2107.w026.n002.628B.p1.628.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+nav p {
+    color: white;
+}
+
+.ul-div {
+    display: flex;
+    width: 36%;
+    margin-right: 10px;
+}
+
+.ul-div ul {
+    display: flex;
+    width: 100%;
+    gap: 18px;
+    list-style: none;
+}
+
+.nav-li {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-family: 'Kablammo', cursive;
+}
+
+.nav-li:after {
+    content: "";
+    position: absolute;
+    /* background-color: #9885e6f7; */
+    background-color: #cec5f4f7;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: width 0.3s;
+    color: #ffffff ;
+}
+
+.nav-li:hover a{
+   color: #ffff;
+}
+
+.nav-li:hover:after {
+    width: 100%;
+}
+
+.nav-li a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.mid-body-container {
+    background-color: transparent;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.mid-body-container {
+    height: fit-content;
+    width: fit-content;
+}
+
+.animated-text-div {
+    height: fit-content;
+    width: fit-content;
+}
+
+/* #h2-animate-text {
+    margin-top: 61px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 10rem;
+    font-weight: 100;
+    font-family: "Kablammo";
+} */
+
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+        format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
+}
+
+#h2-animate-text {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #ffffff81;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-size: 10rem;
+    font-weight: 100;
+    text-align: center;
+    color: transparent;
+    margin-top: 61px;
+    text-align: center;
+    text-shadow: 10px 5px #0000008a;
+    /* color: rgba(255, 255, 255, 0.53); */
+    font-family: "Kablammo";
+}
+
+#h2-animate-text:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+    -webkit-text-stroke: 4px #ffffff;
+    font-family: "Kablammo", sans-serif;
+    /* text-shadow: 10px 10px 0px #07bccc, 15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a, 25px 25px 0px #f40468, 45px 45px 10px #482896; */
+    text-shadow: 10px 10px 0px rgba(118, 117, 117, 0.575), 20px 20px 0px rgba(0, 0, 0, 0.635);
+    cursor: pointer;
+}
