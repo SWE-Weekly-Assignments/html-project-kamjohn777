@@ -393,9 +393,10 @@ b {
 
   h1 {
     display: block;
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: 900;
     color: #3d535f;
+    white-space: nowrap;
     /* margin-right: 3px; */
   }
 
@@ -407,6 +408,7 @@ b {
     color: #7f00ff;
     text-transform: capitalize;
     margin-left: 10px;
+    white-space: nowrap;
   }
 
   p {

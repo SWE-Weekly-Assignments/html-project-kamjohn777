@@ -86,11 +86,11 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typingEffects = new Typed(".multiTxt", {
-            strings : [' CODER',' ARTIST',],
+            strings : [' CODER',' ARTIST', 'DRUMMER', 'DEVELOPER'],
             loop : true,
             typeSpeed : 100,
-            backSpeed : 80,
-            backDelay : 1500,
+            backSpeed : 50,
+            backDelay : 2000,
             onStringComplete: function (arrayPos, self) {
             if (self.strings[arrayPos] === 'ARTIST') {
                 self.el.innerHTML = 'an ARTIST';
