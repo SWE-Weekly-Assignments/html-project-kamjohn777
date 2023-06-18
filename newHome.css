@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #ffffff81; */
+    background: -moz-linear-gradient(to left, #dad4ec 0%, #dad4ec 10%, #f3e7e9 100%);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 70px;
+    z-index: 10;
+    /* background-color: blueviolet; */
+}
+
+.logo {
+    display: flex;
+    font-size: 15px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b {
+    font-size: 41px;
+    color: violet;
+    position: relative;
+    bottom: 10%;
+}
+
+.ul-nav-items {
+    display: flex;
+}
+
+.ul-nav-items li {
+    list-style: none;
+    margin: 0 16px;
+}
+
+.ul-nav-items li a {
+    font-size: 16px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.ul-nav-items li:hover a {
+
+}
+
+.nav-li {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-family: 'Kablammo', cursive;
+}
+
+.nav-li:after {
+    content: "";
+    position: absolute;
+    background-color: #cec5f4f7;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 27px;
+    transition: width 0.3s;
+    color: #ffffff ;
+    z-index: 100;
+}
+
+.nav-li:hover a{
+   color: rgb(183, 0, 255);
+}
+
+.nav-li:hover:after {
+    width: 100%;
+}
+
+.nav-li a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.links {
+    font-size: 30px;
+    color: #3d535f;
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.instagram {
+    height: 20px;
+}
+.twitter {
+    height: 20px;
+}
+.linkedin {
+    height: 20px;
+}
+.facebook {
+    height: 20px;
+}
+
+.image-container {
+    position: relative;
+    animation: bounce 2s infinite;
+  }
+  
+  .image-container:nth-child(2) {
+    animation-delay: 0.5s; 
+  }
+  
+  .image-container:nth-child(3) {
+    animation-delay: 1s; 
+  }
+  
+  .image-container:nth-child(4) {
+    animation-delay: 1.5s; 
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); 
+    }
+  }
+
+  .image-container:hover img {
+    transform: scale(1.5); 
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+  }
+  
+  .cols {
+    width: 50%;
+  }
+
+  .topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+  }
+
+  .topline::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 4px;
+    bottom: 10px;
+    background-color: #7f00ff;
+  }
+
+  h1 {
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+  }
+
+  .multiTxt {
+    color: #7f00ff;
+    text-transform: capitalize;
+  }
+
+  p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+  }
+
+  .btns {
+    width: 100%;
+    position: relative;
+    /* left: 150px; */
+  }
+
+  button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+  }
+
+  button:hover {
+    background-color: #7f00ff;
+  }
+
+  /* greycolor part */
+  /* COME BACK AND FIGURE THIS OUT */
+
+   /* #color-image {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+   #bw-image {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 100;
+  } */
+
+  /* iend of this code */
+

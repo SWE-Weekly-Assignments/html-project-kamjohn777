@@ -7,7 +7,7 @@ body {
   background-image: url(./image-folder/159Z_2107.w026.n002.628B.p1.628.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   height: 100vh;
   margin: 0;
 }
@@ -89,15 +89,6 @@ nav p {
     width: fit-content;
 }
 
-/* #h2-animate-text {
-    margin-top: 61px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.53);
-    font-size: 10rem;
-    font-weight: 100;
-    font-family: "Kablammo";
-} */
-
 @font-face {
     src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
         format("woff2");
@@ -107,6 +98,7 @@ nav p {
 }
 
 #h2-animate-text {
+    position: relative;
     transition: all 0.5s;
     -webkit-text-stroke: 4px #ffffff81;
     font-variation-settings: "wght" 900, "ital" 1;
