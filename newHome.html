@@ -11,6 +11,27 @@
 </head>
 <body>
     <div class="main-container">
+        
+        <!-- GRADIENT OBEJECTS START HERE -->
+        <div class="circles">
+            <div id="circ-anim-1"></div>
+            <div id="circ-anim-2"></div>
+            <div id="circ-anim-3"></div>
+            <div id="circ-anim-4"></div>
+            <div id="circ-anim-5"></div>
+            <div id="circ-anim-6"></div>
+            <div id="circ-anim-7"></div>
+            <div id="circ-anim-8"></div>
+            <div id="circ-anim-9"></div>
+            <div id="circ-anim-10"></div>
+            <div id="circ-anim-11"></div>
+            <div id="circ-anim-12"></div>
+            <div id="circ-anim-13"></div>
+            <div id="circ-anim-14"></div>
+            <div id="circ-anim-15"></div>
+            <div id="circ-anim-16"></div>
+        </div>
+    <!-- GRADIENT OBJECTS END HERE -->
         <nav>
             <div class="logo">Kameron Johnson<b>.</b></div>
             <ul class="ul-nav-items">
@@ -43,7 +64,7 @@
         <div class="wrapper">
             <div class="cols cols0">
                 <span class="topline"> Hello</span>
-                <h1>I'm <span class="multiTxt">coder</span></h1>
+                <h1>I'm a<span class="multiTxt"></span></h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis officia sapiente vero incidunt sit esse!</p>
                 <div class="btns">
                     <button>Learn More</button>
@@ -53,7 +74,7 @@
             <div class="cols cols1">
                 <!-- COME BACK AND FIRGURE THIS OUT -->
                 <!-- <div class="image-box1"> -->
-                    <!-- <img id="color-image" src="./image-folder/Subject (1).png" alt="proimagecolor"> -->
+                    <!-- <img id="color-image" src="./image-folder/Snapchat-335077037.jpg" alt="proimagecolor"> -->
                 <!-- </div> -->
                 <!-- <div class="image-box2"> -->
                     <!-- <img id="bw-image" src="./image-folder/Subject.png" alt="proimage"> -->
@@ -61,5 +82,22 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typingEffects = new Typed(".multiTxt", {
+            strings : [' CODER',' ARTIST',],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500,
+            onStringComplete: function (arrayPos, self) {
+            if (self.strings[arrayPos] === 'ARTIST') {
+                self.el.innerHTML = 'an ARTIST';
+            }
+        }
+        })
+        onStringComplete(["CODER","ARTIST"])
+    </script>
 </body>
 </html>

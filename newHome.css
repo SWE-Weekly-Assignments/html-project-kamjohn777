@@ -8,13 +8,17 @@
 
 body {
     overflow: hidden;
+    /* background-image: linear-gradient(to left, #dad4ec 5%, #dad4ec 100%, #f3e7e9 100%); */
+    /* background-image: linear-gradient(110.6deg, rgb(184, 161, 222) 2.2%, rgb(129, 140, 223) 100.2%); */
 }
 
 .main-container {
     width: 100%;
     min-height: 100vh;
     /* background-color: #ffffff81; */
-    background: -moz-linear-gradient(to left, #dad4ec 0%, #dad4ec 10%, #f3e7e9 100%);
+    /* background-image: linear-gradient(to left #dad4ec #715dac #f3e7e9); */
+    /* background-image: linear-gradient(110.6deg, rgb(184, 161, 222) 2.2%, rgb(129, 140, 223) 100.2%); */
+    background-image: linear-gradient(to left, #cd9cf2 0%, #f6f3ff 100%);
 }
 
 nav {
@@ -36,6 +40,174 @@ nav {
     cursor: pointer;
     text-transform: uppercase;
 }
+
+/* STARTS OF GRADIENT BACKGROIUND CODE*/
+/* might have to put this property on the main container but we'll see */
+.circles {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+@keyframes animateC {
+    0% {
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+    }
+      100% {
+        opacity: 0;
+        border-radius: 50%;
+        transform: translateY(-500px) rotate(720deg);
+      }
+    }
+
+.circles div {
+    position: absolute;
+    display: block;
+    /* list-style: none; */
+    width: 20px;
+    height: 20px;
+    background: rgba(221, 201, 234, 0.742);
+    bottom: -150px;
+    animation: animateC 25s linear infinite;
+    z-index: 10;
+}
+
+#circ-anim-1 {
+left: 25%;
+width: 80px;
+height: 80px;
+animation-delay: 0s;
+/* background-color: rgba(162, 90, 210, 0.491); */
+/* animation: animatec 12s linear infinite; */
+}
+
+#circ-anim-2 {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 2s;
+animation-duration: 12s;
+/* background: rgba(174, 148, 192, 0.372); */
+}
+
+#circ-anim-3 {
+    left: 75%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    /* background: rgba(72, 36, 97, 0.87); */
+}
+
+#circ-anim-4 {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 18s;
+    /* background: rgba(72, 36, 97, 0.799); */
+}
+
+#circ-anim-5 {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    /* background: rgba(72, 36, 97, 0.733); */
+}
+
+#circ-anim-6 {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+#circ-anim-7 {
+    left: 35%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 7s;
+}
+
+#circ-anim-8 {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+#circ-anim-9 {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+  
+
+#cird-anim-10 {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+#circ-anim-11 {
+    left: 55%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 4s;
+    animation-duration: 15s;
+}
+
+#circ-anim-12 {
+    left: 30%;
+    width: 70px;
+    height: 70px;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+#circ-anim-13 {
+    left: 70%;
+    width: 10px;
+    height: 10px;
+    animation-duration: 14s;
+    animation-delay: 0s;
+}
+
+#circ-anim-14 {
+    left: 20%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+
+#circ-anim-15 {
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+#circ-anim-16 {
+    left: 65%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 45s;
+    animation-delay: 0s;
+}
+
+/* END OF GRADIENT BACKGROUND CODE */
 
 b {
     font-size: 41px;
@@ -75,7 +247,7 @@ b {
 .nav-li:after {
     content: "";
     position: absolute;
-    background-color: #cec5f4f7;
+    background-color: #ffffff;
     height: 2px;
     width: 0;
     left: 0;
@@ -86,7 +258,7 @@ b {
 }
 
 .nav-li:hover a{
-   color: rgb(183, 0, 255);
+   color: #ffffff;
 }
 
 .nav-li:hover:after {
@@ -155,6 +327,7 @@ b {
   .wrapper {
     display: flex;
     width: 100%;
+    /* height: calc(100vh - 80px); */
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -162,8 +335,43 @@ b {
     overflow: hidden;
   }
   
+.wrapper::before {
+    position: absolute;
+    content: "";
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    left: -5%;
+    top: 50%;
+    /* background: linear-gradient(109.6deg, rgb(218, 185, 252) 11.2%, rgb(125, 89, 252) 91.1%); */
+    /* background: radial-gradient(circle at 12.8% 28%, rgb(206, 155, 243) 0%, rgb(142, 229, 247) 90%); */
+    /* background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212)); */
+    background: linear-gradient(109.6deg, rgba(218, 185, 252, 0.612) 11.2%, rgba(124, 89, 252, 0.589) 91.1%);
+   
+}
+
+.wrapper::after {
+    position: absolute;
+    content: "";
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    left: 50%;
+    top: 10%;
+    /* background: linear-gradient(109.6deg, rgb(218, 185, 252) 11.2%, rgb(125, 89, 252) 91.1%); */
+    /* background: radial-gradient(circle at 12.8% 28%, rgb(206, 155, 243) 0%, rgb(142, 229, 247) 90%); */
+    /* background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212)); */
+    background: linear-gradient(109.6deg, rgba(218, 185, 252, 0.612) 11.2%, rgba(124, 89, 252, 0.589) 91.1%);
+    /* background: linear-gradient(45deg, rgba(218, 185, 252, 0.612) 0%, rgba(124, 89, 252, 0.589) 100%); */
+}
+
   .cols {
     width: 50%;
+  }
+
+  .cols0 {
+    width: 60%;
+    z-index: 1;
   }
 
   .topline {
@@ -185,14 +393,20 @@ b {
 
   h1 {
     display: block;
-    font-size: 7em;
+    font-size: 5em;
     font-weight: 900;
     color: #3d535f;
+    /* margin-right: 3px; */
   }
+
+  /* .cols h1 > span {
+    margin-left: 4px;
+  } */
 
   .multiTxt {
     color: #7f00ff;
     text-transform: capitalize;
+    margin-left: 10px;
   }
 
   p {
@@ -250,4 +464,17 @@ b {
   } */
 
   /* iend of this code */
+
+  .image-box1 {
+    position: relative;
+    width: 40%;
+    height: 40%;
+  }
+
+  .image-box1 img {
+    height: 300px;
+    width: 300px;
+  }
+
+/* COME BACK TO THIS SECTION ABOVE */
 
