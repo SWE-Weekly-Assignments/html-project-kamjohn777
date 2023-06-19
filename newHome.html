@@ -63,9 +63,10 @@
 
         <div class="wrapper">
             <div class="cols cols0">
-                <span class="topline"> Hello</span>
+                <span class="topline"> Hello I'm Kameron</span>
                 <h1>I'm a<span class="multiTxt"></span></h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis officia sapiente vero incidunt sit esse!</p>
+                <p>To learn more about me click "learn more", if you're interested in hiring me, click "Hire Me"</p>
+                <!-- change to button to credentials -->
                 <div class="btns">
                     <button>Learn More</button>
                     <button>Hire me</button>
@@ -86,18 +87,22 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typingEffects = new Typed(".multiTxt", {
-            strings : [' CODER',' ARTIST', 'DRUMMER', 'DEVELOPER'],
+            strings : [' CODER',' DEVELOPER', 'MUSICIAN', 'PAINTER','VISUAL ARTIST'],
+            // i added "artist" to the array before might add again
             loop : true,
-            typeSpeed : 100,
-            backSpeed : 50,
+            typeSpeed : 50,
+            backSpeed : 30,
             backDelay : 2000,
             onStringComplete: function (arrayPos, self) {
-            if (self.strings[arrayPos] === 'ARTIST') {
+
+                // for(let i = 0; i < arrayPos.length; i++) {
+                    if (self.strings[arrayPos[i]] === 'ARTIST') {
                 self.el.innerHTML = 'an ARTIST';
-            }
+                 }
+            // }
         }
         })
-        onStringComplete(["CODER","ARTIST"])
+        // onStringComplete(["CODER","ARTIST"])
     </script>
 </body>
 </html>
