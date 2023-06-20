@@ -64,7 +64,7 @@
         <div class="wrapper">
             <div class="cols cols0">
                 <span class="topline"> Hello I'm Kameron</span>
-                <h1 class="anChange">I'm a</span><span class="multiTxt"></span></h1>
+                <h1 class="anChange">I'm a<span class="multiTxt"></span></h1>
                 <!-- <span class="anLine">I'm an</span> -->
                 <p id="para-txt">To learn more about me click "learn more", if you're <br> interested in hiring me, click "Hire Me"</p>
                 <!-- change to button to credentials -->
@@ -84,13 +84,13 @@
             </div>
 
             <!-- IMAGES FOR DIV ON SIDE -->
-            <div class="images-div-container">
+            <!-- <div class="images-div-container">
                 <div id="image-card-div">
                     <img id="image-card" src="./image-folder/Subject (1).png" alt="">
                 </div>
                 <div class="float-box-1"></div>
                 <div class="float-box-2"></div>
-            </div>
+            </div> -->
             <!-- END OF IMAGES DIV FOR SIDE -->
         </div>
     </div>
@@ -98,14 +98,16 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typingEffects = new Typed(".multiTxt", {
-            strings : ['CODER','DEVELOPER', 'MUSICIAN', 'PAINTER','VISUAL ARTIST'],
+            strings : ['CODER','DEVELOPER', 'MUSICIAN', 'PAINTER','VISUAL ARTIST', 'ARTIST'],
             // i added "artist" to the array before might add again
             loop : true,
             typeSpeed : 50,
             backSpeed : 30,
-            backDelay : 2000,
+            backDelay : 1000,
             onStringComplete: function (arrayPos, self) {
-                const sourceElement = document.getElementsByClassName('.anChange');
+                console.log("im in the on string complete function");
+                // const sourceElement = document.getElementsByClassName('anChange');
+                // console.log(arrayPos);
                 // const targetElement = document.getElementsByClassName('.anLine');
                 // for(let i = 0; i < arrayPos.length; i++) {
                     // if (self.strings[arrayPos[i]] === 'ARTIST') {
@@ -113,14 +115,22 @@
                 // elements = document.getElementsByClassName('.anLine');
 
                 //  }
-                if (self.strings[arrayPos[i]] === 'ARTIST') {
-                    targetElement.textContent = "I'm an";
-                } else {
-                    targetElement.textContent = "I'm a";
-                }
-            }
+                // if (self.strings[arrayPos[i]] === 'ARTIST') {
+                //     targetElement.textContent = "I'm an";
+                // } else {
+                //     targetElement.textContent = "I'm a";
+                // }
+                // if (strings[arrayPos[i]] === 'ARTIST') {
+                //      document.querySelector(".anChange").innerHTML = "I'm an";
+                // } else {
+                //     targetElement.textContent = "I'm a";
+                // }
+
             // }
+            }
         })
+        console.log(typingEffects);
+        // typingEffects.onStringComplete();
         // onStringComplete(["CODER","ARTIST"])
         // have to target the html element like I target the span tag
     </script>
